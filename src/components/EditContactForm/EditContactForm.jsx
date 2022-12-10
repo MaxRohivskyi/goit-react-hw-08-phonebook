@@ -16,7 +16,7 @@ import {
   ContacFormtContainer,
 } from 'components/ContactForm/ContactForm.styled';
 
-export default function EditContactForm() {
+export const EditContactForm = () => {
   const dispatch = useDispatch();
 
   const cancelEditing = useSelector(selectEditing);
@@ -103,4 +103,4 @@ export default function EditContactForm() {
       </ContacFormBoxColum>
     </ContacFormtContainer>
   );
-}
+};

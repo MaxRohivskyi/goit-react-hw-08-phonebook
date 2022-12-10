@@ -13,7 +13,7 @@ import {
   StyledLink,
 } from './RegisterForm.styled';
 
-export default function SignUp() {
+export const SignUp = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
@@ -97,4 +97,4 @@ export default function SignUp() {
       </RegisterBox>
     </RegisterContainer>
   );
-}
+};

@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { addFilter } from 'redux/contacts/filterSlice';
 import { Avatar, Input, Wrapper } from './Filter.styled';
 
-export default function Filter() {
+export const Filter = () => {
   const dispatch = useDispatch();
 
   const handleChange = e => {
@@ -20,4 +20,4 @@ export default function Filter() {
       />
     </Wrapper>
   );
-}
+};

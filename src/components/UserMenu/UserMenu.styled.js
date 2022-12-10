@@ -27,6 +27,13 @@ export const Btn = styled(Button)`
   }
 `;
 
-export const UserName = styled.span`
-  margin-right: 10px;
+export const UserInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px 0 0;
 `;
+
+export const UserName = styled.span``;
+
+export const UserEmail = styled.span``;

@@ -1,7 +1,14 @@
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks';
 import { logOut } from 'redux/auth/operations';
-import { Wrapper, Avatar, Btn, UserName } from './UserMenu.styled';
+import {
+  Wrapper,
+  Avatar,
+  Btn,
+  UserInfo,
+  UserEmail,
+  UserName,
+} from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -11,7 +18,10 @@ export const UserMenu = () => {
     <Wrapper>
       <Avatar />
 
-      <UserName>{`Welcome, ${user.name.toUpperCase()}`}</UserName>
+      <UserInfo>
+        <UserName>{`Welcome, ${user.name.toUpperCase()}`}</UserName>
+        <UserEmail>{`Your email: ${user.email}`}</UserEmail>
+      </UserInfo>
       <Btn
         variant="contained"
         type="button"

@@ -13,7 +13,7 @@ import {
   StyledLink,
 } from './LoginForm.styled';
 
-export default function SignIn() {
+export const SignIn = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
@@ -81,4 +81,4 @@ export default function SignIn() {
       </LoginBox>
     </LoginContainer>
   );
-}
+};

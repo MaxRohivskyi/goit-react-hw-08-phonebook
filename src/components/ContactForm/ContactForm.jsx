@@ -18,7 +18,7 @@ import {
   ContacFormtContainer,
 } from './ContactForm.styled';
 
-export default function ContactForm() {
+export const ContactForm = () => {
   const contacts = useSelector(selectContacts);
 
   const dispatch = useDispatch();
@@ -105,4 +105,4 @@ export default function ContactForm() {
       </ContacFormBoxColum>
     </ContacFormtContainer>
   );
-}
+};
